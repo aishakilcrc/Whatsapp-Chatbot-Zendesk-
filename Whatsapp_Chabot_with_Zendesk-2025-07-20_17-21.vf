@@ -1,0 +1,2036 @@
+{
+  "version": {
+    "_version": 13.02,
+    "autoSaveFromRestore": false,
+    "canvasTemplates": [],
+    "components": [],
+    "creatorID": 1699058,
+    "manualSave": false,
+    "model": {},
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        },
+        {
+          "key": "6797c2110cfd6c00ccbedd9f",
+          "name": "No",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "I'm good",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "I think I'm good thanks",
+              "slots": []
+            },
+            {
+              "text": "Definitely not",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "Under no circumstances",
+              "slots": []
+            },
+            {
+              "text": "Not at all",
+              "slots": []
+            },
+            {
+              "text": "Nope, not at all",
+              "slots": []
+            },
+            {
+              "text": "No way",
+              "slots": []
+            },
+            {
+              "text": "By no means",
+              "slots": []
+            },
+            {
+              "text": "Not in the slightest",
+              "slots": []
+            },
+            {
+              "text": "No chance",
+              "slots": []
+            },
+            {
+              "text": "Absolutely not",
+              "slots": []
+            },
+            {
+              "text": "Not at all",
+              "slots": []
+            },
+            {
+              "text": "Negative",
+              "slots": []
+            },
+            {
+              "text": "Sorry, no",
+              "slots": []
+            },
+            {
+              "text": "Definitely not",
+              "slots": []
+            },
+            {
+              "text": "That's wrong",
+              "slots": []
+            },
+            {
+              "text": "Incorrect",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "No",
+              "slots": []
+            }
+          ],
+          "noteID": "ccia0076f",
+          "description": "Trigger this intent then the user responds negatively"
+        },
+        {
+          "key": "6797c2660cfd6c00ccbeddd1",
+          "name": "Yes",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Definitely",
+              "slots": []
+            },
+            {
+              "text": "Indeed",
+              "slots": []
+            },
+            {
+              "text": "Of course",
+              "slots": []
+            },
+            {
+              "text": "Certainly",
+              "slots": []
+            },
+            {
+              "text": "Without question",
+              "slots": []
+            },
+            {
+              "text": "Sure",
+              "slots": []
+            },
+            {
+              "text": "Definitely",
+              "slots": []
+            },
+            {
+              "text": "You bet",
+              "slots": []
+            },
+            {
+              "text": "Without a doubt",
+              "slots": []
+            },
+            {
+              "text": "By all means",
+              "slots": []
+            },
+            {
+              "text": "Agreed",
+              "slots": []
+            },
+            {
+              "text": "Absolutely",
+              "slots": []
+            },
+            {
+              "text": "That's correct",
+              "slots": []
+            },
+            {
+              "text": "Indeed",
+              "slots": []
+            },
+            {
+              "text": "Affirmative",
+              "slots": []
+            },
+            {
+              "text": "You are right",
+              "slots": []
+            },
+            {
+              "text": "Correct",
+              "slots": []
+            },
+            {
+              "text": "Yep",
+              "slots": []
+            },
+            {
+              "text": "Yes",
+              "slots": []
+            }
+          ],
+          "noteID": "ccia107bg",
+          "description": "Trigger this intent when the user responds positively."
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "globalNoMatch": {
+          "type": "static",
+          "prompt": {
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Sorry, I didn’t get that. Please try again."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "messageDelay": {
+          "durationMilliseconds": 500
+        },
+        "defaultVoice": "elevenlabs:eleven_turbo_v2_5:FGY2WhTYpPnrIDTdsKH5",
+        "deepgramASR": {
+          "silenceWaitMS": 10,
+          "punctuationWaitMS": 1000,
+          "partialWaitMS": 1500,
+          "interruptionWaitWords": 2,
+          "audioCue": null
+        }
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logo.png",
+        "color": "#397DFF",
+        "description": "Hi, how can I help you today?",
+        "feedback": false,
+        "image": "https://cdn.voiceflow.com/assets/logo.png",
+        "persistence": "localStorage",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Your AI agent",
+        "watermark": true,
+        "audioInterface": true
+      },
+      "platform": "webchat"
+    },
+    "programResources": {
+      "agents": {
+        "67db2b56cbe88befffef4623": {
+          "settings": {
+            "model": "gpt-4o-mini",
+            "maxTokens": 500,
+            "temperature": 0.3
+          },
+          "description": "An agent template for resolving issues and ensuring customer satisfaction with technical skill and empathy.",
+          "webSearchTool": null,
+          "knowledgeBaseTool": {
+            "enabled": false,
+            "description": "Triggered the knowledge base when you don't know the answer to a question."
+          },
+          "buttonTool": null,
+          "cardTool": null,
+          "carouselTool": null,
+          "apiTools": [],
+          "pathTools": [
+            {
+              "id": "685f26eeaec98756aed574c2",
+              "name": "Exit",
+              "description": "Trigger this when the user says \"exit\"",
+              "variables": []
+            }
+          ],
+          "instructions": "# Customer Support Agent Instructions for Valchy AI\n\n## Identity & Purpose\n\nYou are Val, a helpful and knowledgeable customer support agent for Valchy AI. Your primary purpose is to assist customers with inquiries related to voice, chat, and AI automations, specifically regarding lead generation, dead lead reactivation, and automations that save time. For any support-related questions, your task is to create Zendesk tickets rather than providing answers directly.\n\n## Voice & Persona\n\n### Personality\n- Sound friendly, professional, and approachable without being overly formal.\n- Use a conversational tone that is clear and concise, maintaining a balance between friendliness and professionalism.\n- Exhibit confidence and readiness to help, ensuring customers feel valued and understood.\n\n### Speech Characteristics\n- Use contractions naturally (I'm, we'll, don't, etc.) to create a conversational feel.\n- Vary sentence length for clarity and engagement, avoiding overly complex structures.\n- Maintain a steady pace, with emphasis on key information to ensure understanding.\n\n## Conversation Flow\n\n### Introduction\nStart with: \"Hello! I’m Val from Valchy AI. How can I assist you today?\"\n\nIf the customer seems confused or frustrated, acknowledge their feelings: \"I understand that navigating AI automations can be overwhelming, but I'm here to help you.\"\n\n### Topic Identification\n1. Use open-ended questions to determine their needs: \"What specific area are you looking to explore today – lead generation, reactivation, or automation?\"\n2. Follow up with clarifying questions to better understand their issue: \"Can you tell me more about your current processes or challenges?\"\n3. Confirm your understanding: \"So, you’re looking to improve [specific area]? Is that correct?\"\n\n### Assistance Approach\n1. Start by suggesting relevant services: \"We offer solutions that can streamline your lead generation. Would you like to hear more about that?\"\n2. Provide guidance clearly and concisely: \"To reactivate dead leads, you can use our automated follow-up system. Let me explain how it works.\"\n3. Encourage engagement by inviting questions: \"Feel free to ask me anything as we go along!\"\n\n### Resource Provision\n1. For additional help or resources: \"I can provide you with guides or links to demos of our services. Would you like that?\"\n2. Ask for specific interests: \"Are you interested in seeing how our automation tools can save you time?\"\n\n### Support-Related Inquiries\nFor any support-related questions, respond with: \"I can help you with that. Let me create a support ticket for you.\" Proceed to capture the details necessary for the Zendesk ticket creation.\n\n### Closing\nEnd with: \"Thank you for reaching out to Valchy AI! If you have any more questions, don’t hesitate to contact us again. Have a great day!\"\n\n## Response Guidelines\n\n- Keep responses clear and under 30 words when possible.\n- Ask one question at a time to avoid overwhelming the customer.\n- Use explicit confirmation for important information: \"So, to clarify, you want to learn about reactivating leads, right?\"\n- Avoid overly technical jargon; keep explanations straightforward and accessible.\n- Express empathy for customer frustrations: \"I understand that this can be confusing, but I’m here to help clarify things.\"\n\n## Scenario Handling\n\n### For New Customers\n1. Guide them through your services: \"Let me walk you through how our lead generation process works.\"\n2. Provide examples of success stories for credibility: \"Many of our clients have seen substantial growth using our automation tools.\"\n\n### For Existing Customers\n1. Address specific account inquiries: \"Can you provide me with your account details, so I can assist you more effectively?\"\n2. Offer updates or improvements: \"We have some exciting new features that could benefit your process. Would you like an overview?\"\n\n### For Technical Issues\n1. Troubleshoot calmly: \"Let’s see if we can resolve the issue you’re experiencing together. Can you describe what happened?\"\n2. Provide step-by-step guidance: \"First, please try [first step] and let me know what you see.\"\n\n## Knowledge Base\n\n### Product Information\n- Valchy AI specializes in voice, chat, and AI automations, with a focus on efficiency in lead generation and reactivation.\n- Common customer inquiries include the functionality and benefits of specific product features and integration options.\n\n### Support Tools\n- Recommend resources such as user manuals, tutorial videos, and FAQs suitable for addressing customer questions.\n- Encourage regular engagement with support channels for ongoing assistance and updates.\n\n### Limitations\n- You cannot provide specific pricing or billing issues; direct those inquiries to the billing department.\n- You cannot assist with third-party software integrations beyond what Valchy AI supports.\n\n## Response Refinement\n\n- When explaining processes, use simple analogies: \"Think of our automation as a personal assistant that organizes your leads.\"\n- For troubleshooting, number each step clearly and confirm completion before moving to the next step.\n- Maintain a supportive tone, especially when addressing customer confusion or technical difficulties.\n\n## Call Management\n\n- If background noise interferes with communication: \"I’m having trouble hearing you clearly. Could you please adjust your microphone?\"\n- If you need time to find information: \"I’m looking for the best solution for you. Please hold on for a moment.\"\n- If the connection drops, attempt to reconnect and begin with: \"Hello again! I’m Val, and I apologize for the disconnection. Let’s pick up where we left off regarding [last topic].\"\n\nRemember, your main goal is to ensure customers feel supported and informed while finding effective solutions to their inquiries regarding Valchy AI services. For any support related questions, create Zendesk tickets instead of providing answers.",
+          "functionTools": [],
+          "integrationTools": [
+            {
+              "description": null,
+              "integrationToolID": "685f233eaec98756aed573c7",
+              "variables": {}
+            },
+            {
+              "description": null,
+              "integrationToolID": "685f2347aec98756aed573cb",
+              "variables": {}
+            },
+            {
+              "description": null,
+              "integrationToolID": "685f2359aec98756aed573eb",
+              "variables": {}
+            }
+          ]
+        }
+      },
+      "prompts": {},
+      "apiTools": {},
+      "messages": {
+        "685f2733aec98756aed574df": {
+          "variants": {
+            "default:en-us": [
+              {
+                "condition": null,
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "This is now deterministic :)"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                }
+              }
+            ]
+          }
+        }
+      },
+      "integrationTools": {
+        "685f2347aec98756aed573cb": {
+          "name": "Add ticket comment",
+          "toolName": "zendesk_add_ticket_comment",
+          "description": "Add a comment to a ticket in Zendesk.",
+          "toolProvider": "zendesk"
+        },
+        "685f233eaec98756aed573c7": {
+          "name": "Create ticket",
+          "toolName": "zendesk_create_ticket",
+          "description": "Create a new ticket in Zendesk.",
+          "toolProvider": "zendesk"
+        },
+        "685f2359aec98756aed573eb": {
+          "name": "Update ticket",
+          "toolName": "zendesk_update_ticket",
+          "description": "Update a ticket in Zendesk.",
+          "toolProvider": "zendesk"
+        }
+      }
+    },
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "Whatsapp Chabot with Zendesk",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "nonDraftResponsesMap": {},
+        "responseMessagesByDiscriminatorIDMap": {},
+        "responseDiscriminatorsByResponseIDMap": {},
+        "functionDefinitions": {},
+        "referencedResponseIDs": [
+          "685f2733aec98756aed574df"
+        ],
+        "referencedAgentsIDs": [
+          "67db2b56cbe88befffef4623"
+        ],
+        "referencedAPIToolIDs": [],
+        "referencedIntegrationToolIDs": [
+          "685f233eaec98756aed573c7",
+          "685f2347aec98756aed573cb",
+          "685f2359aec98756aed573eb"
+        ],
+        "slotsMap": {},
+        "platform": "webchat",
+        "products": {},
+        "extraSlots": [],
+        "interfaces": [],
+        "permissions": [],
+        "projectType": "chat",
+        "extraIntents": [],
+        "usedEventsSet": [],
+        "usedIntentsSet": [],
+        "goToIntentsSet": [],
+        "entitiesMap": {},
+        "variableMap": {},
+        "intentsMap": {},
+        "requiredEntitiesMap": {},
+        "eventsMap": {},
+        "cmsVariables": {
+          "sessions": {
+            "isSystem": true,
+            "description": "The number of times a particular user has opened the app.",
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "description": "The user's unique ID.",
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+            "defaultValue": null
+          },
+          "locale": {
+            "isSystem": true,
+            "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "description": "The agent's last response (text/speak) in a string.",
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "description": "The object containing the last event that the user client has triggered.",
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "description": "The user's last utterance in a text string.",
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+            "defaultValue": null
+          }
+        },
+        "cmsEntities": {}
+      },
+      "settings": {},
+      "platform": "webchat"
+    },
+    "settings": {
+      "voice": {
+        "tts": {
+          "provider": "elevenlabs",
+          "model": "eleven_turbo_v2_5",
+          "voice": "FGY2WhTYpPnrIDTdsKH5",
+          "settings": {}
+        },
+        "failureMessage": "We’re sorry, but the call cannot be completed at this time. Please try again later.",
+        "hasCallRecording": false
+      },
+      "memory": {
+        "turns": 25
+      },
+      "globalNoMatch": {
+        "type": "static",
+        "prompt": [
+          {
+            "text": [
+              "Sorry, I didn’t get that. Please try again."
+            ]
+          }
+        ]
+      },
+      "intentClassification": {
+        "type": "rag",
+        "params": {
+          "model": "claude-3.5-haiku",
+          "temperature": 0.1
+        },
+        "promptWrapper": null
+      }
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "64dbb6696a8fab0013dba194"
+      }
+    ],
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory"
+    ],
+    "_id": "687cd03edbf724a2fba2a9e7",
+    "updatedAt": "2025-07-20T11:17:18.530Z",
+    "publishedAt": "2024-09-27T16:54:27.996Z",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64dbb6696a8fab0013dba194"
+        ],
+        "rootDiagramID": "64dbb6696a8fab0013dba194",
+        "updatedBy": 1699058,
+        "updatedAt": "2025-07-20T11:17:18.530Z"
+      }
+    ],
+    "projectID": "687cd03edbf724a2fba2a9e6",
+    "rootDiagramID": "64dbb6696a8fab0013dba194",
+    "templateDiagramID": "64dbb6696a8fab0013dba195"
+  },
+  "diagrams": {
+    "64dbb6696a8fab0013dba195": {
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "nodes": {},
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1701833501,
+      "creatorID": 1699058,
+      "variables": [],
+      "menuItems": [],
+      "_id": "687cd03edbf724a2fba2a9e9",
+      "diagramID": "64dbb6696a8fab0013dba195",
+      "versionID": "687cd03edbf724a2fba2a9e7"
+    },
+    "64dbb6696a8fab0013dba194": {
+      "name": "ROOT",
+      "type": "TOPIC",
+      "zoom": 77.22222249348958,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "67db2b51c6c175f16d898091",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -287.34,
+                          158.64
+                        ]
+                      },
+                      {
+                        "point": [
+                          -211.75,
+                          158.64
+                        ]
+                      },
+                      {
+                        "point": [
+                          -211.75,
+                          56.52
+                        ]
+                      },
+                      {
+                        "point": [
+                          -136.16,
+                          56.52
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            -351.6816735414138,
+            136.63119334963568
+          ]
+        },
+        "67db2b51c6c175f16d898090": {
+          "type": "agent",
+          "data": {
+            "name": "Customer support specialist",
+            "agentID": "67db2b56cbe88befffef4623",
+            "listenForOtherTriggers": true,
+            "exitEveryConversationalTurn": false,
+            "portsV2": {
+              "byKey": {
+                "685f26eeaec98756aed574c2": {
+                  "id": "685f26ee37459d0bd3910d7e",
+                  "target": "685f270337459d0bd3910d80",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          194.84,
+                          228.61
+                        ]
+                      },
+                      {
+                        "point": [
+                          260.12,
+                          228.61
+                        ]
+                      },
+                      {
+                        "point": [
+                          260.12,
+                          355.61
+                        ]
+                      },
+                      {
+                        "point": [
+                          325.4,
+                          355.61
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "67db2b51c6c175f16d898090"
+        },
+        "67db2b51c6c175f16d898091": {
+          "type": "block",
+          "data": {
+            "name": "Customer support",
+            "steps": [
+              "67db2b51c6c175f16d898090"
+            ],
+            "color": ""
+          },
+          "nodeID": "67db2b51c6c175f16d898091",
+          "coords": [
+            28.832134794158392,
+            29.517407514478258
+          ]
+        },
+        "685f270337459d0bd3910d80": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "685f2733aec98756aed574df",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "685f270337459d0bd3910d81"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "685f270337459d0bd3910d80"
+        },
+        "685f270337459d0bd3910d82": {
+          "type": "block",
+          "data": {
+            "name": "New Block 2",
+            "steps": [
+              "685f270337459d0bd3910d80",
+              "685f275d38359af4c129ffcb"
+            ]
+          },
+          "nodeID": "685f270337459d0bd3910d82",
+          "coords": [
+            491.4002637416022,
+            276.61837699415594
+          ]
+        },
+        "685f275d38359af4c129ffcb": {
+          "type": "buttons-v2",
+          "data": {
+            "name": "Buttons",
+            "items": [
+              {
+                "id": "cmcffrdw0003u2e7i8pecu6y0",
+                "label": [
+                  {
+                    "text": [
+                      "Red pill"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cmcffrli600472e7iziwuqxr1",
+                "label": [
+                  {
+                    "text": [
+                      "Blue Pill"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "listenForOtherTriggers": true,
+            "portsV2": {
+              "byKey": {
+                "cmcffrdw0003u2e7i8pecu6y0": {
+                  "id": "685f275e38359af4c129ffce",
+                  "target": "685f277438359af4c129ffd2",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          657.4,
+                          415.86
+                        ]
+                      },
+                      {
+                        "point": [
+                          723.68,
+                          415.86
+                        ]
+                      },
+                      {
+                        "point": [
+                          723.68,
+                          248.89
+                        ]
+                      },
+                      {
+                        "point": [
+                          789.96,
+                          248.89
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "cmcffrli600472e7iziwuqxr1": {
+                  "id": "685f276838359af4c129ffd0",
+                  "target": "685f279038359af4c129ffdc",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          657.4,
+                          470.11
+                        ]
+                      },
+                      {
+                        "point": [
+                          731.53,
+                          470.11
+                        ]
+                      },
+                      {
+                        "point": [
+                          731.53,
+                          579.8
+                        ]
+                      },
+                      {
+                        "point": [
+                          805.65,
+                          579.8
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "685f275d38359af4c129ffcb"
+        },
+        "685f277438359af4c129ffd2": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdWqhNBYjBaTtrhuHizMD4G7PqGvReuyBjiA&s",
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "67db2b51c6c175f16d898090",
+                  "id": "685f277438359af4c129ffd3",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1121.95,
+                          425.34
+                        ]
+                      },
+                      {
+                        "point": [
+                          1382.09,
+                          425.34
+                        ],
+                        "locked": true
+                      },
+                      {
+                        "point": [
+                          1382.09,
+                          108.53
+                        ],
+                        "locked": true
+                      },
+                      {
+                        "point": [
+                          194.82,
+                          108.53
+                        ],
+                        "reversed": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "dimensions": {
+              "width": 262,
+              "height": 193
+            },
+            "frameType": "AUTO"
+          },
+          "nodeID": "685f277438359af4c129ffd2"
+        },
+        "685f277438359af4c129ffd4": {
+          "type": "block",
+          "data": {
+            "name": "New Block 3",
+            "steps": [
+              "685f277438359af4c129ffd2"
+            ]
+          },
+          "nodeID": "685f277438359af4c129ffd4",
+          "coords": [
+            955.963553809473,
+            169.88756921537782
+          ]
+        },
+        "685f279038359af4c129ffdc": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://preview.redd.it/you-take-the-blue-pill-v0-xd94j6ok500b1.jpg?width=640&crop=smart&auto=webp&s=481c8b3383a1a5067999ad40e61de88a06d7f415",
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "67db2b51c6c175f16d898090",
+                  "id": "685f279038359af4c129ffdd",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1121.38,
+                          759.05
+                        ]
+                      },
+                      {
+                        "point": [
+                          1402.02,
+                          759.05
+                        ],
+                        "locked": true
+                      },
+                      {
+                        "point": [
+                          1402.02,
+                          108.53
+                        ],
+                        "locked": true
+                      },
+                      {
+                        "point": [
+                          194.82,
+                          108.53
+                        ],
+                        "reversed": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "dimensions": {
+              "width": 640,
+              "height": 480
+            },
+            "frameType": "AUTO"
+          },
+          "nodeID": "685f279038359af4c129ffdc"
+        },
+        "685f279038359af4c129ffde": {
+          "type": "block",
+          "data": {
+            "name": "New Block 4",
+            "steps": [
+              "685f279038359af4c129ffdc"
+            ]
+          },
+          "nodeID": "685f279038359af4c129ffde",
+          "coords": [
+            955.4020986282584,
+            499.54809305408537
+          ]
+        }
+      },
+      "offsetX": 487.0542929169983,
+      "offsetY": 55.332226660229594,
+      "modified": 1701833501,
+      "creatorID": 1699058,
+      "variables": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "_id": "687cd03edbf724a2fba2a9ea",
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "versionID": "687cd03edbf724a2fba2a9e7"
+    }
+  },
+  "flows": [],
+  "entities": [],
+  "entityVariants": [],
+  "intents": [
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 1699058,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedd9f",
+      "name": "No",
+      "createdByID": 1699058,
+      "folderID": null,
+      "description": "Trigger this intent then the user responds negatively",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd1",
+      "name": "Yes",
+      "createdByID": 1699058,
+      "folderID": null,
+      "description": "Trigger this intent when the user responds positively.",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    }
+  ],
+  "utterances": [
+    {
+      "id": "6797c2110cfd6c00ccbedda0",
+      "text": [
+        {
+          "text": [
+            "I'm good"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda1",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda2",
+      "text": [
+        {
+          "text": [
+            "I think I'm good thanks"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda3",
+      "text": [
+        {
+          "text": [
+            "Definitely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda4",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda5",
+      "text": [
+        {
+          "text": [
+            "Under no circumstances"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda6",
+      "text": [
+        {
+          "text": [
+            "Not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda7",
+      "text": [
+        {
+          "text": [
+            "Nope, not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda8",
+      "text": [
+        {
+          "text": [
+            "No way"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda9",
+      "text": [
+        {
+          "text": [
+            "By no means"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddaa",
+      "text": [
+        {
+          "text": [
+            "Not in the slightest"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddab",
+      "text": [
+        {
+          "text": [
+            "No chance"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddac",
+      "text": [
+        {
+          "text": [
+            "Absolutely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddad",
+      "text": [
+        {
+          "text": [
+            "Not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddae",
+      "text": [
+        {
+          "text": [
+            "Negative"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddaf",
+      "text": [
+        {
+          "text": [
+            "Sorry, no"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb0",
+      "text": [
+        {
+          "text": [
+            "Definitely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb1",
+      "text": [
+        {
+          "text": [
+            "That's wrong"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb2",
+      "text": [
+        {
+          "text": [
+            "Incorrect"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb3",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb4",
+      "text": [
+        {
+          "text": [
+            "No"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd2",
+      "text": [
+        {
+          "text": [
+            "Definitely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd3",
+      "text": [
+        {
+          "text": [
+            "Indeed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd4",
+      "text": [
+        {
+          "text": [
+            "Of course"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd5",
+      "text": [
+        {
+          "text": [
+            "Certainly"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd6",
+      "text": [
+        {
+          "text": [
+            "Without question"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd7",
+      "text": [
+        {
+          "text": [
+            "Sure"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd8",
+      "text": [
+        {
+          "text": [
+            "Definitely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd9",
+      "text": [
+        {
+          "text": [
+            "You bet"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddda",
+      "text": [
+        {
+          "text": [
+            "Without a doubt"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddb",
+      "text": [
+        {
+          "text": [
+            "By all means"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddc",
+      "text": [
+        {
+          "text": [
+            "Agreed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddd",
+      "text": [
+        {
+          "text": [
+            "Absolutely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddde",
+      "text": [
+        {
+          "text": [
+            "That's correct"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddf",
+      "text": [
+        {
+          "text": [
+            "Indeed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedde0",
+      "text": [
+        {
+          "text": [
+            "Affirmative"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedde1",
+      "text": [
+        {
+          "text": [
+            "You are right"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c3060cfd6c00ccbede5c",
+      "text": [
+        {
+          "text": [
+            "Correct"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c3080cfd6c00ccbede5d",
+      "text": [
+        {
+          "text": [
+            "Yep"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "6797c3090cfd6c00ccbede5e",
+      "text": [
+        {
+          "text": [
+            "Yes"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    }
+  ],
+  "requiredEntities": [],
+  "folders": [],
+  "responses": [
+    {
+      "id": "685f2704aec98756aed574c7",
+      "name": "",
+      "createdByID": 1699058,
+      "folderID": null,
+      "type": "message",
+      "draft": true,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "685f2706aec98756aed574cd",
+      "name": "",
+      "createdByID": 1699058,
+      "folderID": null,
+      "type": "message",
+      "draft": true,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "685f270baec98756aed574d9",
+      "name": "",
+      "createdByID": 1699058,
+      "folderID": null,
+      "type": "message",
+      "draft": true,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "685f270aaec98756aed574d3",
+      "name": "",
+      "createdByID": 1699058,
+      "folderID": null,
+      "type": "message",
+      "draft": true,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "685f2733aec98756aed574df",
+      "name": "",
+      "createdByID": 1699058,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    }
+  ],
+  "responseMessages": [
+    {
+      "id": "685f2704aec98756aed574c9",
+      "discriminatorID": "685f2704aec98756aed574c8",
+      "text": [
+        {
+          "text": [
+            ""
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "685f2706aec98756aed574cf",
+      "discriminatorID": "685f2706aec98756aed574ce",
+      "text": [
+        {
+          "text": [
+            ""
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "685f270baec98756aed574db",
+      "discriminatorID": "685f270baec98756aed574da",
+      "text": [
+        {
+          "text": [
+            ""
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "685f270aaec98756aed574d5",
+      "discriminatorID": "685f270aaec98756aed574d4",
+      "text": [
+        {
+          "text": [
+            ""
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "685f2733aec98756aed574e1",
+      "discriminatorID": "685f2733aec98756aed574e0",
+      "text": [
+        {
+          "text": [
+            "This is now deterministic :)"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    }
+  ],
+  "responseDiscriminators": [
+    {
+      "id": "685f2704aec98756aed574c8",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "685f2704aec98756aed574c7",
+      "variantOrder": [
+        "685f2704aec98756aed574c9"
+      ],
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "685f2706aec98756aed574ce",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "685f2706aec98756aed574cd",
+      "variantOrder": [
+        "685f2706aec98756aed574cf"
+      ],
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "685f270baec98756aed574da",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "685f270baec98756aed574d9",
+      "variantOrder": [
+        "685f270baec98756aed574db"
+      ],
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "685f270aaec98756aed574d4",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "685f270aaec98756aed574d3",
+      "variantOrder": [
+        "685f270aaec98756aed574d5"
+      ],
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "685f2733aec98756aed574e0",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "685f2733aec98756aed574df",
+      "variantOrder": [
+        "685f2733aec98756aed574e1"
+      ],
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    }
+  ],
+  "variables": [
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 1699058,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 1699058,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 1699058,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 1699058,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "locale",
+      "name": "locale",
+      "createdByID": 1699058,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+      "defaultValue": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 1699058,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 1699058,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 1699058,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 1699058,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 1699058,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    }
+  ],
+  "workflows": [
+    {
+      "id": "66df755be937eb000784abb2",
+      "name": "Start workflow",
+      "createdByID": 1699058,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "assigneeID": null,
+      "description": "",
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "prompts": [],
+  "promptMessages": [],
+  "events": [],
+  "agents": [
+    {
+      "id": "67db2b56cbe88befffef4623",
+      "name": "Customer support specialist",
+      "createdByID": 1699058,
+      "folderID": null,
+      "settings": {
+        "model": "gpt-4o-mini",
+        "maxTokens": 500,
+        "temperature": 0.3
+      },
+      "description": "An agent template for resolving issues and ensuring customer satisfaction with technical skill and empathy.",
+      "instructions": [
+        {
+          "text": [
+            "# Customer Support Agent Instructions for Genie AI\n\n## Identity & Purpose\n\nYou are Genie, a helpful and knowledgeable customer support agent for Genie AI. Your primary purpose is to assist customers with inquiries related to voice, chat, and AI automations, specifically regarding lead generation, dead lead reactivation, and automations that save time. For any support-related questions, your task is to create Zendesk tickets rather than providing answers directly.\n\n## Voice & Persona\n\n### Personality\n- Sound friendly, professional, and approachable without being overly formal.\n- Use a conversational tone that is clear and concise, maintaining a balance between friendliness and professionalism.\n- Exhibit confidence and readiness to help, ensuring customers feel valued and understood.\n\n### Speech Characteristics\n- Use contractions naturally (I'm, we'll, don't, etc.) to create a conversational feel.\n- Vary sentence length for clarity and engagement, avoiding overly complex structures.\n- Maintain a steady pace, with emphasis on key information to ensure understanding.\n\n## Conversation Flow\n\n### Introduction\nStart with: \"Hello! I’m AI Shakil from Genie AI. How can I assist you today?\"\n\nIf the customer seems confused or frustrated, acknowledge their feelings: \"I understand that navigating AI automations can be overwhelming, but I'm here to help you.\"\n\n### Topic Identification\n1. Use open-ended questions to determine their needs: \"What specific area are you looking to explore today – lead generation, reactivation, or automation?\"\n2. Follow up with clarifying questions to better understand their issue: \"Can you tell me more about your current processes or challenges?\"\n3. Confirm your understanding: \"So, you’re looking to improve [specific area]? Is that correct?\"\n\n### Assistance Approach\n1. Start by suggesting relevant services: \"We offer solutions that can streamline your lead generation. Would you like to hear more about that?\"\n2. Provide guidance clearly and concisely: \"To reactivate dead leads, you can use our automated follow-up system. Let me explain how it works.\"\n3. Encourage engagement by inviting questions: \"Feel free to ask me anything as we go along!\"\n\n### Resource Provision\n1. For additional help or resources: \"I can provide you with guides or links to demos of our services. Would you like that?\"\n2. Ask for specific interests: \"Are you interested in seeing how our automation tools can save you time?\"\n\n### Support-Related Inquiries\nFor any support-related questions, respond with: \"I can help you with that. Let me create a support ticket for you.\" Proceed to capture the details necessary for the Zendesk ticket creation.\n\n### Closing\nEnd with: \"Thank you for reaching out to Genie AI! If you have any more questions, don’t hesitate to contact us again. Have a great day!\"\n\n## Response Guidelines\n\n- Keep responses clear and under 30 words when possible.\n- Ask one question at a time to avoid overwhelming the customer.\n- Use explicit confirmation for important information: \"So, to clarify, you want to learn about reactivating leads, right?\"\n- Avoid overly technical jargon; keep explanations straightforward and accessible.\n- Express empathy for customer frustrations: \"I understand that this can be confusing, but I’m here to help clarify things.\"\n\n## Scenario Handling\n\n### For New Customers\n1. Guide them through your services: \"Let me walk you through how our lead generation process works.\"\n2. Provide examples of success stories for credibility: \"Many of our clients have seen substantial growth using our automation tools.\"\n\n### For Existing Customers\n1. Address specific account inquiries: \"Can you provide me with your account details, so I can assist you more effectively?\"\n2. Offer updates or improvements: \"We have some exciting new features that could benefit your process. Would you like an overview?\"\n\n### For Technical Issues\n1. Troubleshoot calmly: \"Let’s see if we can resolve the issue you’re experiencing together. Can you describe what happened?\"\n2. Provide step-by-step guidance: \"First, please try [first step] and let me know what you see.\"\n\n## Knowledge Base\n\n### Product Information\n- Genie AI specializes in voice, chat, and AI automations, with a focus on efficiency in lead generation and reactivation.\n- Common customer inquiries include the functionality and benefits of specific product features and integration options.\n\n### Support Tools\n- Recommend resources such as user manuals, tutorial videos, and FAQs suitable for addressing customer questions.\n- Encourage regular engagement with support channels for ongoing assistance and updates.\n\n### Limitations\n- You cannot provide specific pricing or billing issues; direct those inquiries to the billing department.\n- You cannot assist with third-party software integrations beyond what Genie AI supports.\n\n## Response Refinement\n\n- When explaining processes, use simple analogies: \"Think of our automation as a personal assistant that organizes your leads.\"\n- For troubleshooting, number each step clearly and confirm completion before moving to the next step.\n- Maintain a supportive tone, especially when addressing customer confusion or technical difficulties.\n\n## Call Management\n\n- If background noise interferes with communication: \"I’m having trouble hearing you clearly. Could you please adjust your microphone?\"\n- If you need time to find information: \"I’m looking for the best solution for you. Please hold on for a moment.\"\n- If the connection drops, attempt to reconnect and begin with: \"Hello again! I’m AI Shakil, and I apologize for the disconnection. Let’s pick up where we left off regarding [last topic].\"\n\nRemember, your main goal is to ensure customers feel supported and informed while finding effective solutions to their inquiries regarding Genie AI services. For any support related questions, create Zendesk tickets instead of providing answers."
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "685f26eeaec98756aed574c2"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": false,
+        "description": "Triggered the knowledge base when you don't know the answer to a question."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:19:47.000Z",
+      "updatedByID": 1699058
+    }
+  ],
+  "agentAPITools": [],
+  "agentPathTools": [
+    {
+      "id": "685f26eeaec98756aed574c2",
+      "name": "Exit",
+      "agentID": "67db2b56cbe88befffef4623",
+      "description": "Trigger this when the user says \"exit\"",
+      "variableOrder": [],
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    }
+  ],
+  "agentFunctionTools": [],
+  "agentIntegrationTools": [
+    {
+      "id": "685f2340aec98756aed573c8",
+      "agentID": "67db2b56cbe88befffef4623",
+      "description": null,
+      "inputVariables": {},
+      "captureResponse": null,
+      "integrationToolID": "685f233eaec98756aed573c7",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "685f2348aec98756aed573cc",
+      "agentID": "67db2b56cbe88befffef4623",
+      "description": null,
+      "inputVariables": {},
+      "captureResponse": null,
+      "integrationToolID": "685f2347aec98756aed573cb",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    },
+    {
+      "id": "685f235baec98756aed573ec",
+      "agentID": "67db2b56cbe88befffef4623",
+      "description": null,
+      "inputVariables": {},
+      "captureResponse": null,
+      "integrationToolID": "685f2359aec98756aed573eb",
+      "createdAt": "2025-07-20T11:17:18.000Z"
+    }
+  ],
+  "agentPathToolVariables": [],
+  "apiTools": [],
+  "apiToolInputVariables": [],
+  "integrationTools": [
+    {
+      "id": "685f2347aec98756aed573cb",
+      "name": "Add ticket comment",
+      "createdByID": 1699058,
+      "folderID": null,
+      "toolName": "zendesk_add_ticket_comment",
+      "description": "Add a comment to a ticket in Zendesk.",
+      "toolProvider": "zendesk",
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "685f233eaec98756aed573c7",
+      "name": "Create ticket",
+      "createdByID": 1699058,
+      "folderID": null,
+      "toolName": "zendesk_create_ticket",
+      "description": "Create a new ticket in Zendesk.",
+      "toolProvider": "zendesk",
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    },
+    {
+      "id": "685f2359aec98756aed573eb",
+      "name": "Update ticket",
+      "createdByID": 1699058,
+      "folderID": null,
+      "toolName": "zendesk_update_ticket",
+      "description": "Update a ticket in Zendesk.",
+      "toolProvider": "zendesk",
+      "createdAt": "2025-07-20T11:17:18.000Z",
+      "updatedAt": "2025-07-20T11:17:18.000Z",
+      "updatedByID": 1699058
+    }
+  ],
+  "functions": [],
+  "functionPaths": [],
+  "functionVariables": [],
+  "project": {
+    "type": "chat",
+    "name": "Whatsapp Chabot with Zendesk",
+    "image": "https://cm4-production-assets.s3.amazonaws.com/1729190521409-square-onyx-1024.jpg",
+    "teamID": "eOn28K5bkK",
+    "members": [],
+    "privacy": "private",
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 1699058,
+    "updatedBy": 1699058,
+    "apiPrivacy": "public",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "_id": "687cd03edbf724a2fba2a9e6",
+    "updatedAt": "2025-07-20T11:17:18.448Z",
+    "devVersion": "687cd03edbf724a2fba2a9e7",
+    "liveVersion": "687cd03edbf724a2fba2a9e8"
+  },
+  "_version": "1.2",
+  "secrets": [],
+  "variableStates": [],
+  "transcriptEvaluations": []
+}
